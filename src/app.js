@@ -9,6 +9,7 @@ import { setTextFilter} from './actions/filtersActions';
 import getVisibleExpenses from './selectors/expensesSelector'
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
+import 'react-dates/lib/css/_datepicker.css';
 import { bindActionCreators } from 'redux';
 
 const store = configureStore()
