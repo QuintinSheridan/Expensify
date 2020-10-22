@@ -9,11 +9,6 @@ export default  (expenses, {text, sortBy, startDate, endDate}) => {
         const endDateMatch = endDate ? endDate.isSameOrAfter(createdAtMoment, 'day'): true
         const textMatch = expense.description.toLowerCase().includes(text.toLowerCase());
 
-        console.log('text: ', text)
-        console.log('expense.description.toLowerCase(): ', expense.description.toLowerCase())
-        console.log('text.toLowerCase(): ', text.toLowerCase())
-        console.log('textMatch: ', textMatch)
-
         return startDateMatch && endDateMatch && textMatch;
     }).sort((a,b) => {
         if(sortBy === 'date') {

@@ -29,7 +29,6 @@ test("should add expense", () => {
     }
 
     const state = expensesReducer(expenses, action)
-    console.log(state)
     expect(state[3]).toEqual(expense)
 })
 
