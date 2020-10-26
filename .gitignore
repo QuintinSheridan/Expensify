@@ -1,3 +1,7 @@
 node_modules
 src/playground
 yarn-error.log
+oldPackageStuff/
+bundle.js   
+public/styles.css
+public/styles.css.map
