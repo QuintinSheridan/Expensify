@@ -3,5 +3,6 @@ src/playground
 yarn-error.log
 oldPackageStuff/
 bundle.js   
+bundle.js.map
 public/styles.css
 public/styles.css.map

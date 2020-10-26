@@ -12,7 +12,8 @@ app.get('*', (request, response) => {
     response.sendFile(path.join(publicPath, 'index.html'))
 })
 
-const port = 3000;
+// get herku port from environment variables
+const port = process.env.PORT;
 app.listen(port , () => {
     console.log(`Server is up and running on port ${port}`)
 })
