@@ -2,8 +2,8 @@ node_modules
 src/playground
 yarn-error.log
 oldPackageStuff/
-bundle.js   
-bundle.js.map
+public/bundle.js   
+public/bundle.js.map
 public/styles.css
 public/styles.css.map
 yarn.lock
