@@ -40,7 +40,6 @@ exports[`should render expense list filters correctly 1`] = `
     hideKeyboardShortcutsPanel={false}
     horizontalMargin={0}
     initialVisibleMonth={null}
-    inputIconPosition="before"
     isDayBlocked={[Function]}
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
@@ -56,11 +55,9 @@ exports[`should render expense list filters correctly 1`] = `
     onFocusChange={[Function]}
     onNextMonthClick={[Function]}
     onPrevMonthClick={[Function]}
-    openDirection="down"
     orientation="horizontal"
     phrases={
       Object {
-        "calendarLabel": "Calendar",
         "chooseAvailableEndDate": [Function],
         "chooseAvailableStartDate": [Function],
         "clearDates": "Clear Dates",
@@ -102,7 +99,6 @@ exports[`should render expense list filters correctly 1`] = `
     startDate={null}
     startDateId="startDate"
     startDatePlaceholderText="Start Date"
-    weekDayFormat="dd"
     withFullScreenPortal={false}
     withPortal={false}
   />
@@ -149,7 +145,6 @@ exports[`should set alt filters 1`] = `
     hideKeyboardShortcutsPanel={false}
     horizontalMargin={0}
     initialVisibleMonth={null}
-    inputIconPosition="before"
     isDayBlocked={[Function]}
     isDayHighlighted={[Function]}
     isOutsideRange={[Function]}
@@ -165,11 +160,9 @@ exports[`should set alt filters 1`] = `
     onFocusChange={[Function]}
     onNextMonthClick={[Function]}
     onPrevMonthClick={[Function]}
-    openDirection="down"
     orientation="horizontal"
     phrases={
       Object {
-        "calendarLabel": "Calendar",
         "chooseAvailableEndDate": [Function],
         "chooseAvailableStartDate": [Function],
         "clearDates": "Clear Dates",
@@ -211,7 +204,6 @@ exports[`should set alt filters 1`] = `
     startDate={"1970-01-01T00:00:00.000Z"}
     startDateId="startDate"
     startDatePlaceholderText="Start Date"
-    weekDayFormat="dd"
     withFullScreenPortal={false}
     withPortal={false}
   />
