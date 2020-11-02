@@ -20,7 +20,7 @@ export default [{
     description: 'food',
     amount: 30000,
     note: '',
-    createdAT: moment(0).add(4,'days').valueOf()
+    createdAt: moment(0).add(4,'days').valueOf()
 }]
 
 

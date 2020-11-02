@@ -8,3 +8,5 @@ public/styles.css
 public/styles.css.map
 yarn.lock
 public/dist/
+.env.test
+.env.development

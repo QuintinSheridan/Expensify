@@ -49,7 +49,7 @@ test('should filter by end date', ()=> {
     const result = selectExpenses(expenses, filters)
     // this test broke after mocking moment, no idea why same logic as set end date
     // should be [expenses[0], expenses[1]]
-    expect(result).toEqual([expenses[2], expenses[0], expenses[1]])
+    expect(result).toEqual([expenses[0], expenses[1]])
 })
 
 // sort by date
