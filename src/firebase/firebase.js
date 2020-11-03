@@ -3,6 +3,8 @@
 import * as firebase from 'firebase';
 import expenses from './../tests/fixtures/expenses';
 
+console.log("GOD DAMNIT", process.env.FIREBASE_API_KEY)
+
 const config = {
     apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTH_DOMAIN,
