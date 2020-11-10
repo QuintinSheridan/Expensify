@@ -1,13 +1,19 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom'
+import React from 'react';
+import {NavLink} from 'react-router-dom';
+import { connect } from 'react-redux';
+import { startLogout } from '../actions/authActions';
 
-const Header = () => (
+const printClicked = () => {
+   console.log('FFS');
+}
+
+export const Header = (props) => (
     <header>
         <h1>Expensify</h1>
-        <NavLink to='/' exact={true} activeStyle={{
+        <NavLink to='/dashboard' exact={true} activeStyle={{
             fontWeight: "bold",
             color: "red"
-          }}> Home </NavLink>
+          }}> Dashboard </NavLink>
         <NavLink to='/create' activeStyle={{
             fontWeight: "bold",
             color: "red"
@@ -16,8 +22,12 @@ const Header = () => (
             fontWeight: "bold",
             color: "red"
           }}> Help </NavLink>
+          <button onClick={props.startLogout}>Logout</button>
     </header>
 );
 
+const mapDispatchToProps = (dispatch) => ({
+  startLogout: () => dispatch(startLogout())
+});
 
-export default Header;
+export default connect(undefined, mapDispatchToProps)(Header);
