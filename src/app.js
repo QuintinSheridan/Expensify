@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter.js';
-import ExpenseDashboardPage from './components/ExpenseDashboardPage';
 import configureStore from './store/configureStore';
 import { startSetExpenses } from './actions/expensesActions';
 import { login, logout} from './actions/authActions';
@@ -10,7 +9,6 @@ import getVisibleExpenses from './selectors/expensesSelector'
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
-import { bindActionCreators } from 'redux';
 import { firebase } from './firebase/firebase';
 
 //import './playground/promises';
@@ -20,7 +18,6 @@ const store = configureStore()
 store.subscribe(() => {
     const state = store.getState();
     const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-
 });
 
 // // add expense

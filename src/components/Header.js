@@ -17,11 +17,11 @@ export const Header = (props) => (
         <NavLink to='/create' activeStyle={{
             fontWeight: "bold",
             color: "red"
-          }}> Create </NavLink>
-        <NavLink to='/help' activeStyle={{
+          }}>Create Expense</NavLink>
+        {/*<NavLink to='/help' activeStyle={{
             fontWeight: "bold",
             color: "red"
-          }}> Help </NavLink>
+          }}> Help </NavLink>*/}
           <button onClick={props.startLogout}>Logout</button>
     </header>
 );
